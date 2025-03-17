@@ -9,8 +9,10 @@
 # print(len(txt.replace(" ", "")))
 
 words = []
-for i in range(1, 6):
-    word = input(f"Enter word {i}: ")
-    words.append(word)
+word = input(f"Enter five phrases separated by |: ")
+# for i in range(1, 6):
+#     word = input(f"Enter five words separated by spaces: ")
+#     # words.append(word)
+word = word.split("|")
 for word in words:
-    print(word,":",len(word))
+    print(word,":",len(word.replace(" ", "")))
